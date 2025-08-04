@@ -29,7 +29,7 @@
 			"label": "Hello Remote World",
 			"onAutoForward": "notify"
 		}
-	}
+	},
 
 	 // Use 'postCreateCommand' to run commands after the container is created.
         "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html; if [ -f composer.json ];then composer install;fi"
